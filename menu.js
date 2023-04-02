@@ -75,10 +75,10 @@ console.log(pizza.tags)
 
 //CODE HERE
 
-// const newPizzaPrice = pizzaPrice.map(num => num *1.10)
-// console.log(newPizzaPrice)
+const newPizzaPrice = pizzaPrice.map(num => num *1.10)
+console.log(newPizzaPrice)
 
-// let 
+// im a little lost on this one
 
 /*
     Fourth, and last, destructure the category
@@ -89,8 +89,8 @@ console.log(pizza.tags)
 
 //CODE HERE
 
-// const {catagory} = Pizza;
-// console.log(catagory)
+const {catagory} = Pizza;
+console.log(catagory)
 
 
 //////////////////PROBLEM 3////////////////////
