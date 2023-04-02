@@ -75,6 +75,10 @@ console.log(pizza.tags)
 
 //CODE HERE
 
+// const newPizzaPrice = pizzaPrice.map(num => num *1.10)
+// console.log(newPizzaPrice)
+
+// let 
 
 /*
     Fourth, and last, destructure the category
@@ -84,6 +88,9 @@ console.log(pizza.tags)
 */
 
 //CODE HERE
+
+// const {catagory} = Pizza;
+// console.log(catagory)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -100,7 +107,42 @@ console.log(pizza.tags)
 
 //CODE HERE
 
+const foodArr = [
+    { name: 'loaded nachos',
+    price: 14,
+    category: 'meal',
+    popularity: 85,
+    rating: 8,
+    tags: ['cruchy', 'has everthing you desire']},
 
+    { name: 'salad',
+    price: 4,
+    category: 'entree',
+    popularity: 75,
+    rating: 9.5,
+    tags: ['Ranch is good', 'healthy']},
+
+    { name: 'Fries',
+    price: 5,
+    category: 'side',
+    popularity: 95,
+    rating: 10,
+    tags: ['potatos', 'great with cheese']},
+
+    { name: 'double bacon burger',
+    price: 8.50,
+    category: 'meal',
+    popularity: 65,
+    rating: 9,
+    tags: ['meaty', 'bacon']},
+
+    { name: 'MAC AND CHEESE BURGER',
+    price: 10,
+    category: 'meal',
+    popularity: 100,
+    rating: 8,
+    tags: ['big', 'cheesy']}
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -116,9 +158,11 @@ console.log(pizza.tags)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((checkTags) => {
+    return checkTags.tags.indexOf(`big`) >= 0
+})
 
-
+console.log (filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 

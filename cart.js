@@ -56,10 +56,14 @@ console.log(summedPrice)
 */
 
 //CODE HERE
-const calcFinalPrice = (cartTotal, couponValue, tax) => {
-    return cartTotal * tax - couponValue
-    
+function calcFinalPrice(cartTotal, couponValue, tax){
+    let total = carTotal * (tax)
+    total -= couponValue
+    return(total)
 }
+
+const finalprice = calcFinalPrice
+console.log(finalprice)
 
 //this is good lol
 
@@ -85,6 +89,8 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 
 /*
     TEXT ANSWER HERE
+    The properties the customer object will show is their name, phone nuumber, rating, reveiw. He chose those properties because the review of a restaurant is very important to get more customers in the doors. He of course wants the fame where everyone looks at his review and rating because of his 10 out of 10 reviews that are so on point. the phone number is for reservations. everthing else is for the fame!
+
 
 */
 
@@ -94,3 +100,11 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 */
 
 //CODE HERE
+
+
+let customer = {
+    name: 'moose',
+    phoneNumber: '(480)-984-6294',
+    rating: 10,
+    reveiw: 'THE MACK AND CHEESE BURGER IS TO DIE FOR!!!!!'
+}
